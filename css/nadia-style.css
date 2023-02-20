@@ -1,8 +1,8 @@
 #anmeldelser{
-    background-color: lightgray;
+    background-color: lightgrey;
     width: 1000px;
-    height: 250px;
-    margin: 50px auto;
+    height: 350px;
+    margin: 200px auto;
     border: 1px solid black;
 }
 
@@ -42,5 +42,12 @@
     padding: 20px 50px;
     text-align: center;
     color: black;
+}
+
+#indhold > h3{
+    text-align: left;
+    color: black;
+    font-style: italic;
+    padding: 10px;
 }
 
