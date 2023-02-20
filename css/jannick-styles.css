@@ -131,7 +131,9 @@ a {
     position: absolute;
     top: 50%;
     left: 0;
-    transform: translateY(-50%);
+    transform: translateY(-50%) scale(1);
+    transform-origin: center center;
+    transition: transform 8s cubic-bezier(.25,.46,.45,.94);
 }
 
 .shop-cat-link {
@@ -154,6 +156,10 @@ a {
     transition: transform 200ms ease-in-out;
     transform-origin: left center;
     transform: scale(1);
+}
+
+.shop-cat-img:hover {
+    transform: translateY(-50%) scale(1.2);
 }
 
 .shop-cat-link:hover::after {
