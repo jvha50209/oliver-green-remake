@@ -4,9 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Anmeldelser</title>
+    <link rel="stylesheet" href="css/nadia-style.css">
+    <script src="js/nadia-js.js" defer></script>
 </head>
 <body>
-    
+    <div id="anmeldelser">
+        <div id="slideshow">
+            <div onclick="slideshow(0); clearInterval(intrvl);" style="background: lightgrey;"></div>
+            <div onclick="slideshow(1); clearInterval(intrvl);"></div>
+            <div onclick="slideshow(2); clearInterval(intrvl);"></div>
+            <div onclick="slideshow(3); clearInterval(intrvl);"></div>
+        </div>
+        <div id="indhold">
+            <h2>Lækkert ur</h2>
+            <p>Meget behageligt at have på - plejer ellers altid at skulle vænne mig til et ur, men læderremmen er virkelig behagelig.
+                Var lidt i tvivl om jeg måtte åbne poserne med rem, urskive etc. og om jeg i så fald stadig kunne bytte uret, men det skulle bestemt ikke byttes - så problemet udeblev :-)</p>
+        </div>
+    </div>
 </body>
 </html>
