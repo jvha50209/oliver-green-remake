@@ -68,9 +68,22 @@ a {
     font-size: 15px;
 }
 
+.align-center {
+    text-align: center;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: #000000;
+    opacity: 0.5;
+}
+
 .hero-section {
     max-height: 800px;
-    height: auto;
     overflow: hidden;
 }
 
@@ -164,4 +177,39 @@ a {
 
 .shop-cat-link:hover::after {
     transform: scaleX(0);
+}
+
+.marketing-vid-section {
+    max-height: 800px;
+    overflow: hidden;
+    position: relative;
+}
+
+.marketing-vid-poster {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.marketing-vid-section-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.play-icon {
+    height: 80px;
+    cursor: pointer;
+    transform-origin: center center;
+    filter: drop-shadow(0 2px 2px rgba(0,0,0,.2));
+    transition: transform .2s ease-in-out;
+}
+
+.play-icon:hover {
+    transform: scale(1.1);
+}
+
+.marketing-vid-section-content .play-icon {
+    margin-top: 30px;
 }
