@@ -295,3 +295,22 @@ li {
     transform: translate(-50%, -50%);
     height: 80px;
 }
+
+.lifestyle-slider-wrapper {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    max-height: 570px;
+}
+
+.lifestyle-slide-item {
+    width: 25%;
+    display: inline-block;
+}
+
+.lifestyle-slide-img {
+    width: 100%;
+    object-fit: cover;
+    object-position: center center;
+    aspect-ratio: 1/2;
+}
