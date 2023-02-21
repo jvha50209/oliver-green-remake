@@ -20,6 +20,16 @@ a {
     text-decoration: none;
 }
 
+ul,
+ol {
+    margin: 0;
+    padding: 0 0 0 2ch;
+}
+
+li {
+    margin-bottom: 18px;
+}
+
 .white-text {
     color: #FFFFFF;
 }
@@ -34,7 +44,7 @@ a {
 
 .section-heading,
 .btn,
-.shop-cat-link {
+.cta-link {
     letter-spacing: 0.75px;
 }
 
@@ -44,6 +54,32 @@ a {
     padding: 10px 28px;
     background: #000000;
     text-align: center;
+}
+
+.cta-link {
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: lowercase;
+    position: relative;
+    display: inline-block;
+}
+
+.cta-link--dark::after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background: #101010;
+    border-radius: 2px;
+    bottom: -2px;
+    left: 0;
+    transition: transform 200ms ease-in-out;
+    transform-origin: left center;
+    transform: scale(1);
+}
+
+.cta-link--dark:hover::after {
+    transform: scaleX(0);
 }
 
 .border {
@@ -57,6 +93,10 @@ a {
 .section-bg {
     height: 100%;
     width: 100%;
+}
+
+.split-section {
+    display: flex;
 }
 
 .section-heading {
@@ -82,9 +122,19 @@ a {
     opacity: 0.5;
 }
 
+.play-icon {
+    fill: #FFFFFF;
+}
+
 .hero-section {
     max-height: 800px;
     overflow: hidden;
+}
+
+.hero-section-bg {
+    height: 100%;
+    width: 100%;
+    display: block;
 }
 
 .hero-section-content {
@@ -147,6 +197,7 @@ a {
     transform: translateY(-50%) scale(1);
     transform-origin: center center;
     transition: transform 8s cubic-bezier(.25,.46,.45,.94);
+    display: block;
 }
 
 .shop-cat-link {
@@ -155,6 +206,7 @@ a {
     position: absolute;
     bottom: 40px;
     left: 50px;
+    text-transform: lowercase;
 }
 
 .shop-cat-link::after {
@@ -189,6 +241,7 @@ a {
     height: 100%;
     width: 100%;
     object-fit: cover;
+    display: block;
 }
 
 .marketing-vid-section-content {
@@ -212,4 +265,33 @@ a {
 
 .marketing-vid-section-content .play-icon {
     margin-top: 30px;
+}
+
+.easy-123 {
+    width: calc(50% - 1.5px);
+    overflow: hidden;
+}
+
+.easy-123:first-child {
+    border-right: 1.5px solid #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.easy-123:last-child {
+    border-left: 1.5px solid #FFFFFF;
+}
+
+.easy-123-img {
+    height: 100%;
+    width: 100%;
+}
+
+.explainer-vid-section .play-icon-wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 80px;
 }
