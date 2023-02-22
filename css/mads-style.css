@@ -75,7 +75,7 @@ h1{
 .grid-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 10px;
+    grid-gap: 3px;
     border-top: 3px solid #FFFFFF;
   }
 
