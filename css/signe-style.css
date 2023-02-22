@@ -1,4 +1,168 @@
 body{
     background-color: #f6f6f6;
 }
+.FQA-overskrift{
+    border: #ffffff;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-width: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90px;
+    font-size: 45px;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 2px;
+}
+
+.FQA-menu{
+    list-style: none;
+    font-family: sans-serif;
+    letter-spacing: 2px;
+    font-size: 13px;
+    line-height: 35px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin-left: 150px;
+    margin-top: 100px;
+}
+
+h2{
+    font-family: sans-serif;
+    font-size: 15px;
+    margin-bottom: 50px;
+}
+
+
+h3{
+    font-family: sans-serif;
+    font-size: 15px;
+    margin-top: 70px;
+    margin-bottom: 50px;
+}
+
+h4{
+    font-family: sans-serif;
+    font-size: 15px;
+    margin-top: 70px;
+    margin-bottom: 50px;
+}
+
+h5{
+    font-family: sans-serif;
+    font-size: 15px;
+    margin-top: 70px;
+    margin-bottom: 50px;
+}
+
+.hvid-baggrund{
+    border: #000;
+    border-style: solid;
+    border-width: 1px;
+    width: 620px;
+    padding: 15px;
+    padding-bottom: 40px;
+    line-height: 22px;
+    font-family: sans-serif;
+}   
+
+.grå-baggrund{
+    border: #000;
+    border-style: solid;
+    border-width: 1px;
+    background-color: #97aab1;
+    width: 620px;
+    padding: 15px;
+    padding-bottom: 40px;
+    line-height: 22px; 
+    font-family: sans-serif;
+}
+
+.grey-box {
+    background-color: #97aab1;
+    border: #000;
+    border-style: solid;
+    border-width: 1px;
+    cursor: pointer;
+    padding: 15px;
+    width: 650px;
+    text-align: left;
+    line-height: 22px;
+  }
+
+  .active, .grey-box:hover {
+    background-color: #97aab1;
+    border-bottom: none;
+  }
+
+  .content-grey {
+    padding: 0 15px;
+    display: none;
+    overflow: hidden;
+    background-color: #97aab1;
+    width: 618px;
+    border: #000;
+    border-style: solid;
+    border-top: none;
+    border-width: 1px;
+  }
+
+
+.white-box {
+  background-color: #f6f6f6;
+  border: #000;
+  border-style: solid;
+  border-width: 1px;
+  cursor: pointer;
+  padding: 15px;
+  width: 650px;
+  text-align: left;
+  line-height: 22px;
+}
+
+.active, .white-box:hover {
+  background-color: #f6f6f6;
+  border-bottom: none;
+}
+
+
+  .content-white {
+    padding: 0 15px;
+    display: none;
+    overflow: hidden;
+    background-color: #f6f6f6;
+    width: 618px;
+    border: #000;
+    border-style: solid;
+    border-top: none;
+    border-width: 1px;
+  }
+
+
+
+
+
+/* footer indhold
+
+.footer-indhold{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    position: absolute;
+}
+
+.footer-indhold ul{
+    list-style: none;
+    line-height: 30px;
+    font-size: 14px;
+    background-color: #000;
+    color: #ffffff;
+    width: 100%;
+}
+
+.footer-overskrift{
+    font-size: 15px;
+    text-decoration: underline;
+}
 
