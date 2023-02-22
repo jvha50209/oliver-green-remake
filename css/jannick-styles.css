@@ -290,13 +290,17 @@ li {
 .reviews-slider-wrapper {
     overflow: hidden;
     white-space: nowrap;
+    height: 100%;
 }
 
 .reviews-slide-item {
+    height: 100%;
     width: 100vw;
     display: inline-block;
     text-align: center;
     white-space: initial;
+    vertical-align: top;
+    transition: transform 600ms cubic-bezier(.22,.61,.36,1);
 }
 
 .review-rating {
