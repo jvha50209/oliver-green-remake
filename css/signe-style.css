@@ -85,7 +85,7 @@ h5{
     line-height: 22px;
     margin-top: 10px;
     font-family: roboto, sans-serif;
-    font-weight: 100;
+    font-weight: 500;
   }
 
   .active, .grey-box:hover {
@@ -119,12 +119,14 @@ h5{
   line-height: 22px;
   margin-top: 10px;
   font-family: roboto, sans-serif;
-font-weight: 100;
+font-weight: 500;
 }
 
 .active, .white-box:hover {
   background-color: #f6f6f6;
 }
+
+
 
 
 .content-white {
