@@ -4,7 +4,6 @@
     list-style: none;
     text-decoration: none;
     box-sizing: border-box;
-    font-family: roboto slab', serif;
 }
 body{
     background-color: #f6f6f6;
@@ -19,13 +18,15 @@ body{
     align-items: center;
     height: 90px;
     font-size: 45px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: roboto, sans-serif;
+    font-weight: 500;
     letter-spacing: 2px;
 }
 
 .FQA-menu{
     list-style: none;
-    font-family: sans-serif;
+    font-family: roboto, sans-serif;
+    font-weight: 500;
     letter-spacing: 2px;
     font-size: 13px;
     line-height: 35px;
@@ -37,28 +38,33 @@ body{
 }
 
 h2{
-    font-family: sans-serif;
+    font-family: roboto, sans-serif;
+    font-weight: 500;
     font-size: 15px;
     margin-bottom: 50px;
+    margin-top: 12px;
 }
 
 
 h3{
-    font-family: sans-serif;
+    font-family: roboto, sans-serif;
+    font-weight: 500;
     font-size: 15px;
     margin-top: 70px;
     margin-bottom: 50px;
 }
 
 h4{
-    font-family: sans-serif;
+    font-family: roboto, sans-serif;
+    font-weight: 500;
     font-size: 15px;
     margin-top: 70px;
     margin-bottom: 50px;
 }
 
 h5{
-    font-family: sans-serif;
+    font-family: roboto, sans-serif;
+    font-weight: 500;
     font-size: 15px;
     margin-top: 70px;
     margin-bottom: 50px;
@@ -78,6 +84,8 @@ h5{
     text-align: left;
     line-height: 22px;
     margin-top: 10px;
+    font-family: roboto, sans-serif;
+    font-weight: 100;
   }
 
   .active, .grey-box:hover {
@@ -85,7 +93,6 @@ h5{
   }
 
   .content-grey {
-    padding: 0 15px;
     display: none;
     overflow: hidden;
     background-color: #97aab1;
@@ -94,6 +101,9 @@ h5{
     border-style: solid;
     border-top: none;
     border-width: 1px;
+    font-family: roboto, sans-serif;
+    font-weight: 100;
+    padding: 15px;
   }
 
 
@@ -108,16 +118,16 @@ h5{
   text-align: left;
   line-height: 22px;
   margin-top: 10px;
+  font-family: roboto, sans-serif;
+font-weight: 100;
 }
 
 .active, .white-box:hover {
   background-color: #f6f6f6;
-
 }
 
 
 .content-white {
-    padding: 0 15px;
     display: none;
     overflow: hidden;
     background-color: #f6f6f6;
@@ -126,6 +136,9 @@ h5{
     border-style: solid;
     border-top: none;
     border-width: 1px;
+    font-family: roboto, sans-serif;
+    font-weight: 100;
+    padding: 15px;
   }
 
 
@@ -161,7 +174,6 @@ h5{
     margin-top: 10px;
     justify-content: space-around;
     height: 556px;
-    align-items: center;
     padding-top:180px;
     padding-bottom: 150px;
 }
