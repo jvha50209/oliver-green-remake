@@ -4,6 +4,7 @@ body {
     line-height: 1.65;
     font-family: Roboto, sans-serif;
     font-weight: 100;
+    background: #f6f6f6;
     color: #101010;
 }
 
@@ -37,14 +38,19 @@ li {
 .section-heading,
 .section-subheading,
 .btn,
-.usp {
+.usp,
+.carousel-nav-text,
+.review-heading,
+.review-meta {
     text-transform: uppercase;
     font-weight: 500;
 }
 
 .section-heading,
 .btn,
-.cta-link {
+.cta-link,
+.review-heading,
+.review-meta {
     letter-spacing: 0.75px;
 }
 
@@ -99,7 +105,8 @@ li {
     display: flex;
 }
 
-.section-heading {
+.section-heading,
+.review-heading {
     font-size: 44px;
     line-height: 1.2;
 }
@@ -229,6 +236,106 @@ li {
 
 .shop-cat-link:hover::after {
     transform: scaleX(0);
+}
+
+.review-section {
+    padding: 40px 0;
+    position: relative;
+    box-sizing: border-box;
+    height: 460px;
+}
+
+.review-section .section-subheading {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 16px;
+}
+
+.carousel-nav-wrapper {
+    position: absolute;
+    top: 60px;
+    right: 50px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.carousel-nav {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    cursor: pointer;
+}
+
+.carousel-nav.not-clickable {
+    opacity: 0.3;
+    cursor: initial;
+}
+
+.carousel-nav-icon {
+    width: 12px;
+}
+
+.carousel-nav-text {
+    font-size: 10px;
+    padding: 0 10px;
+}
+
+.nav-div {
+    height: 100%;
+    width: 1px;
+    background: #CCCCCC;
+}
+
+.reviews-slider-wrapper {
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.reviews-slide-item {
+    width: 100vw;
+    display: inline-block;
+    text-align: center;
+    white-space: initial;
+}
+
+.review-rating {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px 0 10px;
+}
+
+.review-star {
+    color: #e8e8d1;
+    font-size: 15px;
+}
+
+.review-star.filled {
+    color: #d9d934;
+}
+
+.review-heading {
+    margin: 0 0 15px;
+}
+
+.review-body {
+    max-width: 500px;
+    margin: 0 auto 30px;
+    line-height: 20px;
+}
+
+.review-meta {
+    font-size: 13px;
+}
+
+.review-author,
+.review-watch {
+    margin: 0;
+}
+
+.review-date {
+    margin: 0 0 10px;
 }
 
 .marketing-vid-section {
