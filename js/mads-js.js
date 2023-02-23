@@ -5,12 +5,10 @@ let currentImageIndex = 0
 
 const images = [
     { url: "img/menu/billedeog.jpg" },
-    { url: "https://placekitten.com/251/251" },
-    { url: "https://placekitten.com/252/252" },
-    { url: "https://placekitten.com/253/253" },
-    { url: "https://placekitten.com/254/254" },
-    { url: "https://placekitten.com/255/255" },
-    { url: "https://placekitten.com/256/256" },
+    { url: "img/menu/package1.jpg" },
+    { url: "img/menu/packagedelivery.jpg" },
+    { url: "img/menu/packageworld.jpg" },
+    { url: "img/menu/storage1.jpg" },
 ]
 
 for (let index = 0; index < images.length; index++) {
