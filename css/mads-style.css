@@ -78,6 +78,7 @@ h1 {
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 3px;
     border-top: 3px solid #FFFFFF;
+    position: relative;
 }
 
 .text-container {
@@ -95,7 +96,10 @@ h1 {
 .billede {
     display: flex;
     width: 100%;
-    height: 100%;
+    height: 600px;
+    overflow: hidden;
+    object-fit: cover;
+    object-position: center center;
 }
 
 .text-container h2 {
@@ -126,4 +130,37 @@ h1 {
 
 #image-slider img.active {
     display: block;
+}
+
+#prev{
+    position: absolute;
+    top: 50%;
+    right: 41.2%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    color: white;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+    background-color: transparent;
+}
+
+
+#next{
+    position: absolute;
+  top: 50%;
+  left: 97%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+  background-color: transparent;
 }
