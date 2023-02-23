@@ -1,6 +1,75 @@
+body{
+    background-color: #f6f6f6;
+    font-family: Roboto, sans-serif;
+    font-size: 13px;
+    font-weight: 800;
+    font-style: normal;
+    color: #101010;
+}
+
 h1{
     text-align: center;
     font-size: 30px;
+    font-family: roboto, sans-serif;
+    font-weight: 500;
+    border: #ffffff;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-width: 3px;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+* {
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+a{
+    color: #101010;
+}
+
+header {
+    background: #dddddd;;
+    padding: 18px 50px;
+    border-top: 3px solid #FFFFFF;
+    
+}
+
+.navigation-bar {
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    text-align: center;
+    gap: 105px;
+}
+
+nav ul li {
+    margin: 0 5px;
+}
+
+.logo {
+    display: inline-block;
+    width: 200px;
+}
+
+.lol {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    margin-right: 20px;
+    font-weight: 400;
 }
 
 #anmeldelser{
@@ -8,7 +77,8 @@ h1{
     width: 1000px;
     height: 450px;
     margin: 200px auto;
-    border: 1px solid black;
+    border: 1px solid none;
+    margin-top: 50px;
 }
 
 #slideshow{
@@ -33,7 +103,7 @@ h1{
 #indhold{
     margin: 0px auto;
     transition: opacity 0.3s linear 0s;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: roboto, sans-serif;
 }
 
 #indhold > h2{
@@ -41,12 +111,14 @@ h1{
     color:black;
 }
 
-#indhold > p{
+#indhold{
     font-size: 17px;
     line-height: 1.5em;
     padding: 20px 50px;
     text-align: center;
     color: black;
+    font-family: roboto, sans-serif;
+    font-weight: 100;
 }
 
 #indhold > h3{
@@ -66,3 +138,8 @@ button{
     cursor: pointer;
 }
 
+title{
+    font-size: 300px;
+    font-family: roboto, sans-serif;
+    font-weight: 300;
+}

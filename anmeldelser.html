@@ -7,24 +7,75 @@
     <title>Anmeldelser</title>
     <link rel="stylesheet" href="css/nadia-style.css">
     <script src="js/nadia-js.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&display=swap" rel="stylesheet">
 </head>
 <body>
+    <header>
+        <div class="navigation-bar">
+
+            <img class="logo" src="img/menu/oglogo400.png" alt="logo">
+
+            <nav id="desktop">
+                <ul class="navigation">
+                    <li>
+                        <div class="button">
+                            <a href="#">SHOP +</a>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="button">
+                            <a href="#">REVIEWS</a>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="button">
+                            <a href="#">BRAND +</a>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="button">
+                            <a href="#">NICE TO KNOW +</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+
+            <ul class="lol">
+                <li>
+                    <div class="button">
+                        <a href="#"><span> <img width="70" height="70" src="img/menu/svgsearch.svg"
+                                    alt="search"></span></a>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="button">
+                        <a href="#">USD</a>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="button">
+                        <a href="#">BAG</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    
+    <!--Bubble content slideshow-->
     <h1>Anmeldelser</h1>
     <div id="anmeldelser">
         <div id="indhold">
-            <h2>LÆKKERT UR</h2>
-            <p>Meget behageligt at have på - plejer ellers altid at skulle vænne mig til et ur, men læderremmen er virkelig behagelig.
-                Var lidt i tvivl om jeg måtte åbne poserne med rem, urskive etc. og om jeg i så fald stadig kunne bytte uret, men det skulle bestemt ikke byttes - så problemet udeblev :-)
-            <br>
-            <br>
-            <br>
-            ULLA M.O.O
-            <br>
-            03/01/2023
-            <br>
-            <br>
-            Arbor, steel/Blue - 41mm
-            </p>
+            <div class="titel">
+                <h2>Seneste reviews</h2>
+            </div>
         </div>
         <div id="slideshow">
             <div onclick="slideshow(0); clearInterval(intrvl);" style="background: lightgrey;"></div>
