@@ -7,21 +7,6 @@ body{
     color: #101010;
 }
 
-h1{
-    text-align: center;
-    font-size: 30px;
-    font-family: roboto, sans-serif;
-    font-weight: 500;
-    border: #ffffff;
-    border-top-style: solid;
-    border-bottom-style: solid;
-    border-width: 3px;
-    height: 90px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 * {
     margin: 0;
     list-style: none;
@@ -70,6 +55,21 @@ nav ul li {
     gap: 25px;
     margin-right: 20px;
     font-weight: 400;
+}
+
+h1{
+    text-align: center;
+    font-size: 30px;
+    font-family: roboto, sans-serif;
+    font-weight: 500;
+    border: #ffffff;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-width: 3px;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #anmeldelser{
@@ -128,18 +128,34 @@ nav ul li {
     padding: 10px;
 }
 
-button{
+.knap1{
     float: right;
+    width: 200px;
+    height: 40px;
     background-color: black;
     color: white;
-    margin-top: -190px;
-    margin-right: 200px;
-    border-radius: 50px;
+    margin-top: -250px;
+    margin-right: 250px;
     cursor: pointer;
+    font-family: roboto, sans-serif;
+    font-weight: 100;
 }
 
-title{
-    font-size: 300px;
+.knap2{
+    float: left;
+    width: 200px;
+    height: 40px;
+    background-color: #f6f6f6;
+    color: black;
+    margin-top: -250px;
+    margin-left: 250px;
+    cursor: pointer;
     font-family: roboto, sans-serif;
-    font-weight: 300;
+    font-weight: 100;
+}
+
+.titel{
+    font-size: 17px;
+    font-family: roboto, sans-serif;
+    font-weight: 100;
 }
