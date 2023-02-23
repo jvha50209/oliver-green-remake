@@ -13,15 +13,16 @@ body {
     color: #101010;
 }
 
-a{
+a {
     color: #101010;
 }
 
 header {
-    background: #dddddd;;
+    background: #dddddd;
+    ;
     padding: 18px 50px;
     border-top: 3px solid #FFFFFF;
-    
+
 }
 
 .navigation-bar {
@@ -56,7 +57,7 @@ nav ul li {
     font-weight: 400;
 }
 
-.container{
+.container {
     background-color: #f3efef;
     display: flex;
     justify-content: center;
@@ -64,7 +65,7 @@ nav ul li {
     height: 100px;
 }
 
-h1{
+h1 {
     font-size: 44px;
     letter-spacing: .75px;
     line-height: 1.2;
@@ -75,29 +76,33 @@ h1{
 .grid-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 10px;
+    grid-gap: 3px;
     border-top: 3px solid #FFFFFF;
-  }
+    position: relative;
+}
 
-  .text-container{
-        background-color: #f3efef;
-        text-align: center;
-        padding: 20px 0;
-        font-size: 30px; 
-  }
+.text-container {
+    background-color: #f3efef;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+}
 
-  .image-container{
+.image-container {
     display: flex;
     align-items: center;
-  }
+}
 
-  .billede{
+.billede {
     display: flex;
     width: 100%;
-    height: 100%; 
-  }
+    height: 600px;
+    overflow: hidden;
+    object-fit: cover;
+    object-position: center center;
+}
 
-.text-container h2{
+.text-container h2 {
     display: flex;
     justify-content: left;
     font-size: 34px;
@@ -106,7 +111,7 @@ h1{
     padding-left: 100px;
 }
 
-.text-container p{
+.text-container p {
     display: flex;
     justify-content: center;
     padding-right: 100px;
@@ -114,4 +119,48 @@ h1{
     font-size: 15px;
     margin-top: 50px;
     text-align: left;
+}
+
+
+/* Image slider */
+
+#image-slider img {
+    display: none;
+}
+
+#image-slider img.active {
+    display: block;
+}
+
+#prev{
+    position: absolute;
+    top: 50%;
+    right: 41.2%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    color: white;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+    background-color: transparent;
+}
+
+
+#next{
+    position: absolute;
+  top: 50%;
+  left: 97%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+  background-color: transparent;
 }
