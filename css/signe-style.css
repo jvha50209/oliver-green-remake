@@ -152,23 +152,25 @@ font-weight: 500;
     margin-left: 550px;
 }
 
-div, .footer-tekst, ul{
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-    margin-bottom: 50px;
+.footer-tekst, .kolonne{
     font-family: roboto, sans-serif;
     font-weight: 100;
   }
 
-ul, li{
+div, .kolonne{
+    display: flex;
+    flex-direction: row;
+}
+
+.kolonne, li{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     margin-left: 60px;
+    margin-bottom: 10px;
   }
 
-  .footer-overskrift{
+.footer-overskrift{
     text-decoration: underline;
   }
 
