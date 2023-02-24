@@ -157,6 +157,8 @@ div, .footer-tekst, ul{
     flex-direction: row;
     gap: 20px;
     margin-bottom: 50px;
+    font-family: roboto, sans-serif;
+    font-weight: 100;
   }
 
 ul, li{
