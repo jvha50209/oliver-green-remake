@@ -60,6 +60,8 @@ h2, h3, h4, h5{
 
 
 
+/*går boks indhold*/
+
 .grey-box {
     background-color: #97aab1;
     border: #000;
@@ -76,12 +78,12 @@ h2, h3, h4, h5{
     
   }
 
-  .active, .grey-box:hover {
+.active, .grey-box:hover {
     background-color: #97aab1;
   }
  
 
-  .content-grey {
+.content-grey {
     display: none;
     overflow: hidden;
     background-color: #97aab1;
@@ -95,10 +97,12 @@ h2, h3, h4, h5{
     padding: 15px;
   }
 
-  .grey-box.active, .white-box.active{
+.grey-box.active, .white-box.active{
     border-bottom: none;
 }
 
+
+/*hvid boks indhold*/
 
 .white-box {
   background-color: #f6f6f6;
@@ -120,7 +124,6 @@ font-weight: 500;
   
 }
 
-
 .content-white {
     display: none;
     overflow: hidden;
@@ -135,6 +138,10 @@ font-weight: 500;
     padding: 15px;
   }
 
+
+
+
+  /*footer indhold*/
 .footer-indhold{
     height: 556px;
 }
