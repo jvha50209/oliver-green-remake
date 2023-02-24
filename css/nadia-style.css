@@ -79,6 +79,12 @@ h1{
     margin: 200px auto;
     border: 1px solid none;
     margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+#anmeldelser .slide-indhold {
+    flex-direction: column;
 }
 
 #slideshow{
@@ -87,7 +93,7 @@ h1{
     text-align: center;
 }
 
-#slideshow > div{
+#slideshow > .slide-indhold{
     display: inline-block;
     width: 10px;
     height: 10px;
@@ -98,6 +104,7 @@ h1{
     font-size: 17px;
     transition: 0.3s linear 0s;
     cursor: pointer;
+    flex-direction: column;
 }
 
 #indhold{
@@ -148,7 +155,7 @@ h1{
     background-color: #f6f6f6;
     color: black;
     margin-top: -250px;
-    margin-left: 250px;
+    margin-left: 270px;
     cursor: pointer;
     font-family: roboto, sans-serif;
     font-weight: 100;
@@ -159,3 +166,50 @@ h1{
     font-family: roboto, sans-serif;
     font-weight: 100;
 }
+
+
+/*footer indhold*/
+.footer-indhold{
+    height: 556px;
+    background-color: #000;
+    margin-top: 30px;
+}
+
+.footer-indhold, .footer-billede, .footer-tekst{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+.footer-billede{
+    width: 300px;
+    height: auto;
+    color: #ffffff;
+    margin-left: 550px;
+}
+
+.footer-tekst, .kolonne{
+    font-family: roboto, sans-serif;
+    font-weight: 100;
+    color: #f6f6f6;
+  }
+
+div, .kolonne{
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+.kolonne, li{
+    display: flex;
+    margin-bottom: 10px;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 60px;
+    
+  }
+
+.footer-overskrift{
+    text-decoration: underline;
+  }
