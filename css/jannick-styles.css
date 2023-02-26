@@ -412,6 +412,7 @@ li {
     overflow-y: hidden;
     white-space: nowrap;
     max-height: 570px;
+    font-size: 0;
 }
 
 .lifestyle-slide-item {

@@ -8,7 +8,7 @@
 body{
     background-color: #f6f6f6;
 }
-.FQA-overskrift{
+.FAQ-overskrift{
     border: #ffffff;
     border-top-style: solid;
     border-bottom-style: solid;
@@ -23,7 +23,7 @@ body{
     letter-spacing: 2px;
 }
 
-.FQA-menu{
+.FAQ-menu{
     list-style: none;
     font-family: roboto, sans-serif;
     font-weight: 500;
@@ -37,41 +37,33 @@ body{
     margin-top: 100px;
 }
 
-h2{
+.primær-indhold{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.FAQ-indhold{
+    display: flex;
+    flex-direction: column;
+    margin-top: 97px;
+}
+
+
+h2, h3, h4, h5{
     font-family: roboto, sans-serif;
     font-weight: 500;
     font-size: 15px;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     margin-top: 12px;
 }
 
-
-h3{
-    font-family: roboto, sans-serif;
-    font-weight: 500;
-    font-size: 15px;
-    margin-top: 70px;
-    margin-bottom: 50px;
+h3, h4, h5{
+    margin-top: 60px;
 }
 
-h4{
-    font-family: roboto, sans-serif;
-    font-weight: 500;
-    font-size: 15px;
-    margin-top: 70px;
-    margin-bottom: 50px;
-}
 
-h5{
-    font-family: roboto, sans-serif;
-    font-weight: 500;
-    font-size: 15px;
-    margin-top: 70px;
-    margin-bottom: 50px;
-}
-
- 
-
+/*går boks indhold*/
 
 .grey-box {
     background-color: #97aab1;
@@ -79,20 +71,22 @@ h5{
     border-style: solid;
     border-width: 1px;
     cursor: pointer;
-    padding: 15px;
+    padding: 10px;
     width: 650px;
     text-align: left;
     line-height: 22px;
     margin-top: 10px;
     font-family: roboto, sans-serif;
     font-weight: 500;
+    
   }
 
-  .active, .grey-box:hover {
+.active, .grey-box:hover {
     background-color: #97aab1;
   }
+ 
 
-  .content-grey {
+.content-grey {
     display: none;
     overflow: hidden;
     background-color: #97aab1;
@@ -106,6 +100,12 @@ h5{
     padding: 15px;
   }
 
+.grey-box.active, .white-box.active{
+    border-bottom: none;
+}
+
+
+/*hvid boks indhold*/
 
 .white-box {
   background-color: #f6f6f6;
@@ -113,7 +113,7 @@ h5{
   border-style: solid;
   border-width: 1px;
   cursor: pointer;
-  padding: 15px;
+  padding: 10px;
   width: 650px;
   text-align: left;
   line-height: 22px;
@@ -122,12 +122,10 @@ h5{
 font-weight: 500;
 }
 
-.active, .white-box:hover {
+.white-box:hover {
   background-color: #f6f6f6;
+  
 }
-
-
-
 
 .content-white {
     display: none;
@@ -144,47 +142,58 @@ font-weight: 500;
   }
 
 
-.FQA-indhold{
-    display: flex;
-    flex-direction: column;
-    margin-top: 97px;
-}
-
-.primær-indhold{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
 
 
-
-
+  /*footer indhold*/
 .footer-indhold{
-    display: flex;
-    flex-direction: row;
-    position: relative;
-    margin: 0 auto;
+    height: 556px;
+    background-color: #000;
+    margin-top: 30px;
 }
 
-.footer-indhold ul{
-    font-size: 14px;
-    background-color: #000;
-    color: #ffffff;
+.footer-indhold, .footer-billede, .footer-tekst{
     display: flex;
     flex-direction: column;
-    width: 100%;
-    margin-top: 10px;
-    justify-content: space-around;
-    height: 556px;
-    padding-top:180px;
-    padding-bottom: 150px;
+    justify-content: space-evenly;
+  }
+
+.footer-billede{
+    width: 300px;
+    height: auto;
+    color: #ffffff;
+    margin-left: 550px;
 }
 
+.footer-tekst, .kolonne{
+    font-family: roboto, sans-serif;
+    font-weight: 100;
+    color: #f6f6f6;
+  }
+
+div, .kolonne{
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+.kolonne, li{
+    display: flex;
+    margin-bottom: 10px;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 60px;
+    
+  }
 
 .footer-overskrift{
-    font-size: 15px;
     text-decoration: underline;
-}
+  }
+
+
+
+
+
 
 
 

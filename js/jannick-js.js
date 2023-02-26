@@ -4,54 +4,46 @@ const nextReview = document.getElementById('reviews-nav-next');
 let reviewCount = reviews.length;
 let currentReviewIdx = 0;
 
-if (!reviews[0].classList.contains('not-clickable')) {
-    prevReview.classList.add('not-clickable');
-}
+prevReview.classList.add('not-clickable');
 
-// prevReview.addEventListener('click', () => {
-//     toPrevReview();
-//     console.log(reviews[currentReviewIdx].style.transform);
-// });
-
-
-nextReview.addEventListener('click', () => {
-    toNextReview();
-    console.log(reviews[currentReviewIdx].style.transform);
-});
+prevReview.addEventListener('click', (toPrevReview));
+nextReview.addEventListener('click', (toNextReview));
 
 /*
     Functions
 */
 
-// function toPrevReview() {
-//     if (!reviews[0].classList.contains('current-review')) {
+function toPrevReview() {
 
-//         let revPos = reviews[currentReviewIdx].style.transform;
-//         revPos = parseInt(revPos.substring(11, revPos.length - 2));
-//         let moveIdx;
+    if (!reviews[0].classList.contains('current-review')) {
 
-//         moveIdx = revPos + 100;
+        let revPos = reviews[currentReviewIdx].style.transform;
+        revPos = parseInt(revPos.substring(11, revPos.length - 2));
+        let moveIdx;
 
-//         for (let i = reviewCount - 1; i > 0; i--) {
-//             reviews[i].classList.remove('current-review');
-//             reviews[i].style.transform = "translateX(" + moveIdx + "%)";
-//             console.log(moveIdx);
-//             // console.log(reviews[i].style);
-//         }
-//         currentReviewIdx--;
-//         reviews[currentReviewIdx].classList.add('current-review');
+        moveIdx = revPos + 100;
 
-//         if (currentReviewIdx == 0 && !prevReview.classList.contains('not-clickable')) {
-//             prevReview.classList.add('not-clickable');
-//         } else {
-//             prevReview.classList.remove('not-clickable');
-//         }
-//     }
-// }
+        for (let i = reviewCount - 1; i >= 0; i--) {
+            reviews[i].classList.remove('current-review');
+            reviews[i].style.transform = "translateX(" + moveIdx + "%)";
+        }
+        currentReviewIdx--;
+        reviews[currentReviewIdx].classList.add('current-review');
+
+        if (reviews[0].classList.contains('current-review')) {
+            prevReview.classList.add('not-clickable');
+        }
+
+        if (nextReview.classList.contains('not-clickable')) {
+            nextReview.classList.remove('not-clickable');
+        }
+    }
+}
 
 function toNextReview() {
 
     if (!reviews[reviewCount - 1].classList.contains('current-review')) {
+        nextReview.classList.remove('not-clickable');
 
         let revPos = reviews[currentReviewIdx].style.transform;
         let moveIdx;
@@ -73,10 +65,12 @@ function toNextReview() {
         currentReviewIdx++;
         reviews[currentReviewIdx].classList.add('current-review');
 
-        if (currentReviewIdx == reviewCount - 1 && !nextReview.classList.contains('not-clickable')) {
+        if (reviews[reviewCount - 1].classList.contains('current-review')) {
             nextReview.classList.add('not-clickable');
-        } else {
-            nextReview.classList.remove('not-clickable');
         }
+    }
+
+    if (prevReview.classList.contains('not-clickable')) {
+        prevReview.classList.remove('not-clickable');
     }
 }
